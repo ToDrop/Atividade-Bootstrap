@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./staly.css">
+    <title>CSS Grid e Flebox</title>
+</head>
+
+<body>
+    <header class="menupeincipal">
+        <nav>
+            <ul class="menu">
+                <img src="img/Logo.JPG" width="110px" height="48px">
+                <li> <a href="prdutos.index.html">Produtos e Serviços</a></li>
+                <li> <a href="faleconosco.index.html">Fale Conosco</a></li>
+                <li> <a href="index.html">Principal</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="menu2">
+                <ul>
+                    <li> <a href="/">nossa Empresa</a></li>
+                    <li> <a href="/">parceiros</a></li>
+                    <li> <a href="/">orçamentos</a></li>
+                    <li> <a href="/">Localização</a></li>
+                    <li> <a href="/">Trabalhe Conosco</a></li>
+                </ul>
+            </div>
+        </main>
+    </header>
+    <div>
+        
+        <h1 id="titulo">Faça o seu cadastro e solicite seu orçamento gratis</h1>
+
+    </div>
+
+
+    <form>
+        <fieldset class="grupo">
+
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+
+            <div class="campo">
+                <label for="CPF/CNPJ"><strong>CPF/CNPJ</strong></label>
+                <input type="text" name="CPF/CNPJ" id="CPF/CNPJ" required>
+            </div>
+
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="text" name="email" id="email" required>
+        </fieldset>
+
+        </div>
+        <div class="campo">
+            <label for="Telefone"><strong>Telefone</strong></label>
+            <input type="text" name="Telefone" id="Telefone" required>
+        </div>
+        <div class="campo">
+            <label for="Quantidade"><strong>Quantidade</strong></label>
+            <input type="text" name="quantidade" id="Quantidade" required>
+        </div>
+
+
+        <div class="campo">
+            <label><strong>Qual plano você deseja soliciar?</strong></label>
+            <label>
+                <input type="radio" name="devweb" value="frontend" checked>Empresarial
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="backend">Familiar
+            </label>
+            <label>
+                <input type="radio" name="devweb" value="fullstack">Escolar
+            </label>
+        </div>
+
+
+        <div class="campo">
+            <label for="senioridade"><strong>Selecione o grupo por idade</strong></label>
+            <select id="senioridade" required>
+                <option selected disabled value="">Selecione</option>
+                <option>Crianças 0-11</option>
+                <option>Adolescentes 12-18</option>
+                <option>Jovens 19-30</option>
+                <option>Adultos 31-59</option>
+                <option>Idosos 60-70</option>
+                <option>Adultos com mais de 70</option>
+            </select>
+        </div>
+
+        <fieldset class="grupo">
+
+            <div id="check">
+                <label><strong>Selecione o tipo de vacina por fabricante</strong></label><br><br>
+                <input type="checkbox" id="vacina1" name="vacina1" value="Tipo1">
+                <label for="vacina1"> CoronaVac/Sinovac</label>
+                <input type="checkbox" id="vacina2" name="vacina2" value="Tipo2">
+                <label for="vacina2"> Oxford/AstraZeneca</label>
+                <input type="checkbox" id="vacina3" name="vacina3" value="Tipo3">
+                <label for="vacina3"> Pfizer/Biontech</label>
+                <input type="checkbox" id="vacina4" name="vacina4" value="Tipo4">
+                <label for="vacina4"> SputnikV/InstitutoGamaleya</label>
+                <input type="checkbox" id="vacina5" name="vacina5" value="Tipo5">
+                <label for="vacina5"> Ad26.COV2.S/Johnson</label>
+
+            </div>
+        </fieldset>
+
+
+        <div class="campo">
+            <br>
+            <label for="experiencia"><strong>Observações: </strong></label>
+            <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+        </div>
+
+        <div>
+            <button class="botao" type="submit" onsubmit="">Concluído</button>
+        </div>
+    </form>
+
+</body>
+
+</html>

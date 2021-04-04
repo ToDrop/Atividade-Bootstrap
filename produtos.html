@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./staly.css">
+    <title>Principa</title>
+    <link rel="stylesheet" href="bts.js/bootstrap.min.css">
+ 
+  </head>
+<style>
+
+.encontre {
+  color: black;
+  margin: 0 0 65px 0;
+  font-size: 40px;
+  text-align: center;
+  }
+
+  .card-title {
+    color: whitesmoke;
+    font-size: 50px;
+  }
+
+  .card-texto {
+    color: whitesmoke;
+    font-size: 38px;
+  }
+
+  .card-linha {
+    color:whitesmoke;
+    font-size: 30px;
+  }
+
+  .card-serv {
+  color: #3EC1D5;
+  }
+
+</style>
+
+<header>
+    <!--Componentes>Navbar> class="navbar navbar-expand-sm navbar-dark bg-dark" para 
+    navegação nas barras de navegação também aumenta para ocupar o máximo de espaço 
+    horizontal possível-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <img src="img/Logo.JPG" width="110px" height="40px">
+    
+        <!--Componentes>Navbar> class="navbar-nav" para navegação leve e de altura total, incluindo suporte para este menus suspensos-->
+          <ul class="navbar-nav"> 
+
+              <!--Componentes>Navbar> class="nav-item" indica página atual no menu principal 
+               aplicadodiretamente a class="nav-link" ou seus pais imediatos -->
+                <li class="nav-item"> <a class="nav-link" href="contato.html">CONTATO</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="faleconosco.html">FALE CONOSCO</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="principal.html">HOME</a> </li>
+        
+
+               <!--Componentes>Navbar> class="form-inline" para quaisquer controle e ações deeste formulário-->
+                <form class="form-inline">
+
+                 <!--Componentes>Forms> class="form-control mr-sm-2" define o dimencionamento da classe-->
+                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            
+                   <!--Componentes>buttons> class="btn btn-outline-success my-3 my-sm-0" botões sem cores de fundo-->
+                   <button class="btn btn-outline-success my-3 my-sm-0" type="submit">Search</button>
+                </form>
+           </ul>
+      </nav>
+  </header><br/>  
+  <body>  
+
+    <!--form>Layout>Container class="container" bloco de constução do Bootstrap-->
+    <div class="container">
+      <h2 class="encontre">Encontre o que você procura</h2>
+
+      <!--Componets>Cards class="card bg-dark text-white" sobreposição do texto no card principa da pág.-->
+      <div class="card bg-dark text-white">
+        <img class="card-img" src="img/procura.jpg" alt="Card image">
+        <div class="card-img-overlay">
+          <h5 class="card-title">Vacina Web</h5>
+          <p class="card-texto">Temos estoque de vacinas contra o COVID-19 das principais as marcas e laboratório</p>
+          <p class="card-linha">Vendas para todo o país.</p>
+        </div>
+      </div><br/>
+
+      <h2 class="encontre">Nossos principais serviços</h2>
+
+      <!--Componets>Cards class="card-group" card agrupado com contúdo de img e text.-->
+      <div class="card-group">
+        <div class="card">
+          <img class="card-img-top" src="img/orcamento.jpg" width="180px" height="300px" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-serv">Orçamento</h5>
+            <p class="card-text">Fale conosco e solicite seu orçamento sem compromisso.</p>
+            
+          </div>
+        </div>
+        <div class="card">
+          <!--Componets>Cards class="card-img-top" agrupamento da imagem dentro do bloco. O tamnho das imagem 
+          foram agupadas manualmente dentro da classe-->
+          <img class="card-img-top" src="img/inloco.jpg" width="180px" height="300px" alt="Card image cap">
+         
+          <!--Componets>Cards class="card-body" para alinha título e texto dentro dos cards-->
+          <div class="card-body"> 
+            <h5 class="card-serv">Imunização no local</h5>
+            <p class="card-text">Levamos nossa equipe para imunização de sua empresa, instituição ou família.</p>
+           
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="img/24horas.jfif" width="180px" height="300px" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-serv">Atendimento 24h</h5>
+            <p class="card-text">Entre em contato conosco a qualquer momento por nossos canais de atendimentos.</p>
+            
+          </div>
+        </div>
+      </div><br/><br/><br/><br/><br/>
+
+        <section>
+          <h5 class="text-lg-center">Próxima Seção</h5>
+          <!--Contents>Images>class="img-fluid rounded mx-auto d-block" apresenta a imagens em
+          um comportamento responsivo para que ela seja dimensionada com o elemento pai-->
+          <select class="img-fluid rounded mx-auto d-block">
+          </select>
+        </section>
+
+     <script src="bts.js/bootstrap.bundle.min.js"></script>
+     <script src="bts.js/jquery-3.5.1.slim.min.js"></script>
+    </main>
+  </divb>
+</body>
+
+</html>
